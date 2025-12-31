@@ -1,0 +1,172 @@
+/* style.css
+   KP Mango - Mobile-first responsive styles
+   Colors: Mango yellow, Leaf green, White
+   Font: Poppins (loaded from Google Fonts in index.html)
+*/
+
+/* =========================
+   CSS VARIABLES & RESET
+   ========================= */
+:root{
+  --mango-50: #fff7ed;
+  --mango: #FFB03B; /* mango yellow */
+  --mango-dark: #FF7A00;
+  --leaf: #2E7D32; /* leaf green */
+  --muted: #6b7280;
+  --bg-contrast: #f7f9fb;
+  --max-width: 1100px;
+  --radius: 12px;
+  --transition: 220ms ease-in-out;
+  --container-pad: 1rem;
+  --shadow: 0 6px 18px rgba(16,24,40,0.06);
+  color-scheme: light;
+}
+
+/* Basic reset */
+* {box-sizing: border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size:16px;
+  line-height:1.5;
+  color:#0f172a;
+  background:white;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Utility */
+.container{
+  width:100%;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:1rem var(--container-pad);
+}
+
+/* Typography */
+h1{font-size:1.5rem;margin:0 0 .5rem;line-height:1.05}
+h2{font-size:1.125rem;margin:0 0 .75rem}
+h3{font-size:1rem;margin:0 0 .5rem}
+.lead{color:var(--muted);margin:0 0 1rem}
+.intro{color:var(--muted);margin:0 0 1rem}
+.muted{color:var(--muted)}
+.small-note{font-size:.9rem;color:var(--muted)}
+
+/* Header */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:40;
+  background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.75));
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(15,23,42,0.04);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:.75rem 0}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:inherit}
+.brand .logo{border-radius:8px}
+.brand-text small{display:block;font-size:.65rem;color:var(--muted);margin-top:2px}
+.nav{display:none}
+.nav-list{list-style:none;padding:0;margin:0;display:flex;gap:1rem;flex-wrap:wrap}
+.nav-list a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
+.nav-toggle{background:none;border:0;padding:.4rem;border-radius:8px}
+.nav-toggle .hamburger{display:block;width:22px;height:2px;background:var(--muted);position:relative}
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after{content:"";position:absolute;left:0;right:0;height:2px;background:var(--muted)}
+.nav-toggle .hamburger::before{top:-6px}
+.nav-toggle .hamburger::after{top:6px}
+
+/* HERO */
+.hero{
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.12), rgba(255,255,255,0.06)), url('https://images.unsplash.com/photo-1492789435215-7a9f2d1ecf27?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder');
+  background-size:cover;
+  background-position:center;
+  color:#071133;
+  padding:3.25rem 0 2.5rem;
+  border-bottom: 1px solid rgba(15,23,42,0.04);
+}
+.hero-content{max-width:720px}
+.hero h1{color:white;font-size:1.6rem;text-shadow:0 2px 8px rgba(0,0,0,0.35)}
+.hero .lead{color:#fff8ea}
+.hero-ctas{display:flex;gap:.6rem;margin:.75rem 0 0;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem .9rem;border-radius:999px;text-decoration:none;transition:var(--transition);font-weight:600}
+.btn-primary{background:var(--leaf);color:white;box-shadow:var(--shadow)}
+.btn-outline{border:1px solid rgba(15,23,42,0.06);background:white;color:var(--leaf)}
+.btn-whatsapp{background:#25D366;color:#fff}
+.btn:hover{transform:translateY(-2px)}
+
+/* Sections */
+.section{padding:2rem 0}
+.bg-light{background:var(--mango-50)}
+.bg-contrast{background:var(--bg-contrast);padding-top:1.5rem;padding-bottom:1.5rem}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1fr;gap:1rem;align-items:center}
+.about-image img{width:100%;height:auto;border-radius:12px;box-shadow:var(--shadow);display:block}
+.bullets{padding-left:1.1rem;margin-top:.75rem}
+
+/* Products */
+.products-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.product-card{background:white;border-radius:12px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.product-card img{width:100%;height:160px;object-fit:cover}
+.card-body{padding:1rem}
+.card-actions{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin-top:.5rem}
+.link-phone{font-size:.95rem;color:var(--muted);text-decoration:none}
+
+/* Cards grid - Why choose us */
+.cards-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:1rem}
+.card{background:white;padding:1rem;border-radius:12px;box-shadow:var(--shadow);display:flex;gap:.75rem;align-items:flex-start}
+.card .icon{width:40px;height:40px;flex-shrink:0}
+.card h3{margin:0;font-size:1rem}
+
+/* Farming grid */
+.farming-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.practice{background:white;padding:1rem;border-radius:12px;box-shadow:var(--shadow)}
+
+/* Order steps */
+.steps{list-style:none;padding-left:0;margin:0;display:grid;gap:1rem}
+.steps li{background:white;padding:1rem;border-radius:12px;box-shadow:var(--shadow)}
+.order-ctas{display:flex;gap:.6rem;margin-top:1rem;flex-wrap:wrap}
+
+/* Testimonials */
+.testimonials-grid{display:grid;gap:1rem}
+.testimonial{background:white;padding:1rem;border-radius:12px;box-shadow:var(--shadow);border-left:4px solid var(--mango)}
+.testimonial cite{display:block;margin-top:.6rem;color:var(--muted);font-size:.9rem}
+
+/* Contact */
+.contact-grid{display:grid;gap:1rem}
+.contact-card{background:white;padding:1rem;border-radius:12px;box-shadow:var(--shadow)}
+.link-muted{color:var(--muted);text-decoration:none}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(15,23,42,0.04);padding:1rem 0;background:white}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+
+/* Accessibility helpers */
+.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+
+/* =========================
+   Larger screens (desktop)
+   ========================= */
+@media (min-width:720px){
+  h1{font-size:2rem}
+  .nav{display:block}
+  .nav-toggle{display:none}
+
+  .about-grid{grid-template-columns:1fr 360px}
+  .products-grid{grid-template-columns:repeat(2,1fr)}
+  .cards-grid{grid-template-columns:repeat(3,1fr)}
+  .farming-grid{grid-template-columns:repeat(3,1fr)}
+  .testimonials-grid{grid-template-columns:repeat(3,1fr)}
+  .contact-grid{grid-template-columns:repeat(3,1fr)}
+  .hero{padding:4rem 0 3rem}
+  .hero h1{font-size:2.25rem}
+}
+
+/* Extra large */
+@media (min-width:1100px){
+  .cards-grid{grid-template-columns:repeat(5,1fr)}
+}
+
+/* Smooth scrolling for browsers that support it */
+html{scroll-behavior:smooth}
