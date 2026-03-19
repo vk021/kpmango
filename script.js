@@ -7,7 +7,7 @@
 /* =========================
    CONFIG - update this value
    ========================= */
-const PHONE_NUMBER = "XXXXXXXXXXX"; // Replace with your digits, e.g. 919876543210
+const PHONE_NUMBER = "918799402490";
 
 /* Helper to format WhatsApp link */
 function waLink(phone, text = "Hello%20KP%20Mango%20team,%20I%20would%20like%20to%20order%20Kesar%20mangoes.") {
@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   waButtons.forEach(btn => {
     btn.setAttribute("href", waUrl);
     // If phone not set, ensure user notices by leaving link inactive
+    console.log(waUrl);
     if (waUrl === "#") {
       btn.addEventListener("click", function (e) {
         e.preventDefault();
