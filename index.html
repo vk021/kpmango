@@ -1,45 +1,37 @@
 <!doctype html>
-<!--
-  index.html
-  KP Mango - Organic Gir Kesar Mangoes
-  - Mobile-first, SEO-friendly single-page site for GitHub Pages
-  - Replace PHONE_NUMBER with your actual phone (India format, e.g. 919876543210) in script.js
--->
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <!-- SEO -->
-  <title>KP Mango — Organic Gir Kesar Mangoes | Jamvala Gir, Gujarat</title>
-  <meta name="description" content="KP Mango - Organic Gir Kesar mangoes from Jamvala Gir, Gujarat. Chemical-free, naturally ripened, farm-fresh Kesar mangoes. Order via WhatsApp or phone for delivery across India." />
-  <meta name="keywords" content="Kesar Mango, Gir Kesar, Organic Mango, Jamvala Mango Farm, KP Mango" />
+  <title>KP Mango — Premium Organic Gir Kesar Mangoes | Jamvala Gir, Gujarat</title>
+  <meta name="description" content="KP Mango - Premium organic Gir Kesar mangoes from Jamvala Gir, Gujarat. 100% chemical-free, no carbide, naturally ripened on tree. GI Tagged authentic Kesar. Order via WhatsApp for delivery across India." />
+  <meta name="keywords" content="Kesar Mango, Gir Kesar, Organic Mango, Jamvala Mango Farm, KP Mango, Kesar Keri, GI Tagged Mango, No Carbide Mango, Natural Mango Gujarat" />
   <link rel="canonical" href="https://vk021.github.io/kpmango/" />
 
-  <!-- Open Graph (for social sharing) -->
-  <meta property="og:title" content="KP Mango — Organic Gir Kesar Mangoes" />
-  <meta property="og:description" content="Farm-fresh, chemical-free Kesar mangoes from Jamvala Gir. Order via WhatsApp & phone. Delivery across India." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="KP Mango — Premium Organic Gir Kesar Mangoes" />
+  <meta property="og:description" content="Farm-fresh, 100% chemical-free Kesar mangoes from Jamvala Gir. No carbide, naturally ripened. GI Tagged. Delivery across India." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_IN" />
   <meta property="og:site_name" content="KP Mango" />
-  <!-- A placeholder image for social previews; replace with your hosted image -->
-  <meta property="og:image" content="https://images.unsplash.com/photo-1604908177522-7f6f2a3b3b0e?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" />
+  <meta property="og:image" content="images/logo.png" />
 
-  <!-- Google Font: Poppins (clean, modern) -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Structured data for LocalBusiness (replace phone and url as needed) -->
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Store",
     "name": "KP Mango",
-    "description": "Organic Gir Kesar mangoes from Jamvala Gir, Gujarat. Chemical-free and naturally ripened.",
+    "description": "Premium organic Gir Kesar mangoes from Jamvala Gir, Gujarat. 100% chemical-free, no carbide, naturally ripened.",
     "url": "https://vk021.github.io/kpmango/",
-    "telephone": "+91-XXXXXXXXXX",
+    "telephone": "+91-8799402490",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Jamvala Gir",
@@ -50,27 +42,20 @@
   </script>
 </head>
 <body>
-  <!--
-    MAIN NAV / HEADER
-    - Simple, mobile-first header with a toggleable menu
-  -->
+  <!-- SEASON BANNER -->
+  <div class="season-banner">
+    <div class="container">
+      <span class="pulse"></span>
+      <strong>Mango Season 2026:</strong> Pre-booking open! Season starts mid-April. 
+      <a href="#order" class="banner-link">Book Now →</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="KP Mango — Home">
-        <!-- Simple inline SVG mango mark -->
-        <svg class="logo" width="42" height="42" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-          <defs>
-            <linearGradient id="g" x1="0" x2="1">
-              <stop offset="0" stop-color="#FFB03B"/>
-              <stop offset="1" stop-color="#FF7A00"/>
-            </linearGradient>
-          </defs>
-          <path d="M42 18c6 4 10 12 6 20-6 12-26 18-36 6-8-10 0-28 10-32 6-2 18-2 20 6z" fill="url(#g)"/>
-          <path d="M40 12c6-2 10-1 14 2-2 4-8 8-12 6-4-2-6-8-2-8z" fill="#4CAF50"/>
-        </svg>
-        <span class="brand-text">
-          <strong>KP Mango</strong><small>Organic Gir Kesar</small>
-        </span>
+        <img class="logo" src="images/logo.png" alt="KP Mango Logo" width="80" height="80">
       </a>
 
       <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">
@@ -81,55 +66,90 @@
         <ul class="nav-list">
           <li><a href="#about">About</a></li>
           <li><a href="#products">Our Kesar</a></li>
-          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#why">Why Us</a></li>
           <li><a href="#farming">Farming</a></li>
-          <li><a href="#order">Order</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#health">Health</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!--
-    HERO SECTION
-    - Full-width hero with farm background image (placeholder image from Unsplash)
-    - Primary H1 for SEO
-  -->
   <main>
-    <section class="hero" id="hero" role="region" aria-label="KP Mango hero">
-      <!-- Background image via CSS for better responsive control -->
+    <!-- HERO -->
+    <section class="hero" id="hero">
       <div class="hero-content container">
-        <h1>KP Mango — Organic Gir Kesar Mangoes</h1>
-        <p class="lead">Chemical-free • Naturally ripened • Farm-fresh from Jamvala Gir, Gujarat</p>
+        <div class="trust-badges">
+          <span class="badge"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 100% Organic</span>
+          <span class="badge"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> No Carbide</span>
+          <span class="badge"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> GI Tagged</span>
+        </div>
+        
+        <h1>Premium Gir Kesar Mangoes<br><span class="highlight">Direct from Jamvala Gir Farm</span></h1>
+        <p class="lead">Experience the authentic taste of world-famous Gir Kesar — chemical-free, naturally ripened on tree, hand-picked at peak sweetness</p>
 
         <div class="hero-ctas">
-          <a class="btn btn-primary" id="whatsappCta" href="#" title="Order via WhatsApp">Order on WhatsApp</a>
-          <a class="btn btn-outline" href="#products">Our Kesar Boxes</a>
+          <a class="btn btn-primary btn-lg" id="whatsappCta" href="#" title="Order via WhatsApp">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.618-1.462A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.487 0-4.807-.778-6.716-2.101l-.382-.248-3.961 1.254 1.321-3.855-.273-.418A9.935 9.935 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Order on WhatsApp
+          </a>
+          <a class="btn btn-outline" href="tel:+918799402490">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Call Now
+          </a>
         </div>
 
-        <p class="small-note">Delivery across India • Farm-direct packing in 5kg & 10kg boxes</p>
+        <p class="small-note">Delivery across India • Season: April to June • Farm-fresh packing</p>
+      </div>
+    </section>
+
+    <!-- FARM STATS -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat">
+            <span class="stat-number">2100+</span>
+            <span class="stat-label">Mango Trees</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">35+</span>
+            <span class="stat-label">Acres Farm</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">25+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Cities Delivered</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="section container">
-      <h2>About KP Mango</h2>
+      <h2>About KP Mango Farm</h2>
       <div class="about-grid">
         <div class="about-text">
-          <h3>From our family farm in Jamvala Gir</h3>
-          <p>KP Mango is a family-run mango farm located in Jamvala Gir, Gujarat. We grow Gir Kesar mangoes the traditional way — chemical-free, naturally ripened on the tree, and hand-picked at peak flavor. Our goal is to bring premium, honest fruit directly from the farmer to your home.</p>
+          <p class="tagline">For Those Who Know Real Gir Kesar</p>
+          <h3>A Legacy of Quality Since Generations</h3>
+          <p>KP Mango is a family-owned mango orchard nestled in the heart of <strong>Jamvala Gir, Gujarat</strong> — the birthplace of authentic Kesar mangoes. Our farm has been cultivating premium Gir Kesar mangoes for over two decades, following traditional organic methods passed down through generations.</p>
+          
+          <p>Located in the Gir region, known worldwide for its unique climate and soil that gives Kesar mangoes their distinctive golden color, rich aroma, and unmatched sweetness. Our mangoes carry the prestigious <strong>GI (Geographical Indication) Tag</strong>, certifying their authentic origin.</p>
+          
           <ul class="bullets">
-            <li>Small-batch, carefully sorted fruit</li>
-            <li>Traceable harvest from our farm to your doorstep</li>
-            <li>Ideal for families and premium buyers who value taste and safety</li>
+            <li><strong>Family-run farm</strong> with personal attention to every tree</li>
+            <li><strong>No middlemen</strong> — direct farm to home delivery</li>
+            <li><strong>100% traceable</strong> — know exactly where your mangoes come from</li>
+            <li><strong>Handpicked</strong> at optimal ripeness for best taste</li>
           </ul>
         </div>
 
-        <figure class="about-image" aria-hidden="false">
-          <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
-               alt="KP Mango farm - rows of mango trees in Jamvala Gir" loading="lazy"/>
-          <figcaption class="visually-hidden">KP Mango farm, Jamvala Gir</figcaption>
+        <figure class="about-image">
+          <img src="images/mango-farm.png" alt="Fresh Gir Kesar Mangoes from KP Mango Farm" loading="lazy"/>
         </figure>
       </div>
     </section>
@@ -137,80 +157,122 @@
     <!-- PRODUCTS -->
     <section id="products" class="section bg-light">
       <div class="container">
-        <h2>Our Kesar Mangoes</h2>
-        <p class="intro">Premium Gir Kesar, available in farm-packed boxes ready for gifting or family consumption.</p>
+        <h2>Our Kesar Mango Varieties</h2>
+        <p class="intro">Premium Gir Kesar in multiple grades — choose based on your preference for size and sweetness.</p>
 
-        <div class="products-grid">
-          <article class="product-card">
-            <img src="https://images.unsplash.com/photo-1574226516831-e292f1f4f400?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="5kg box of Gir Kesar mangoes" loading="lazy">
+        <div class="products-grid-3">
+          <!-- Grade A -->
+          <article class="product-card featured">
+            <div class="product-badge">Most Popular</div>
+            <img src="images/mango-box-grade-a.png" alt="Grade A Premium Kesar Mangoes" loading="lazy">
             <div class="card-body">
-              <h3>5 kg Box</h3>
-              <p class="muted">Perfect for small families — carefully packed and cushioned for safe delivery.</p>
-              <ul>
-                <li>Hand-picked, hand-sorted</li>
-                <li>Natural ripening</li>
-                <li>Farm-fresh packing</li>
+              <h3>Grade A — Premium</h3>
+              <p class="muted">Largest size, extra sweet. Perfect for gifting and special occasions.</p>
+              <ul class="product-features">
+                <li>Extra large size (300g+ each)</li>
+                <li>Maximum sweetness</li>
+                <li>Premium gift-worthy packing</li>
               </ul>
               <div class="card-actions">
-                <a href="#" class="btn btn-primary order-btn">Order via WhatsApp</a>
-                <a href="tel:+91XXXXXXXXXX" class="muted link-phone">Call to order</a>
+                <a href="#" class="btn btn-primary order-btn">Order Grade A</a>
+                <a href="tel:+918799402490" class="link-phone">Call: +91 8799402490</a>
               </div>
             </div>
           </article>
 
+          <!-- Grade B -->
           <article class="product-card">
-            <img src="https://images.unsplash.com/photo-1600180758894-9a7e5f16c4f7?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="10kg box of Gir Kesar mangoes" loading="lazy">
+            <img src="images/mango-box-grade-b.png" alt="Grade B Regular Kesar Mangoes" loading="lazy">
             <div class="card-body">
-              <h3>10 kg Box</h3>
-              <p class="muted">Ideal for gifting or bulk buyers — premium sorting for taste and texture.</p>
-              <ul>
-                <li>Best for parties and bulk buyers</li>
-                <li>Premium-grade fruit</li>
-                <li>Carefully packed to protect fruit</li>
+              <h3>Grade B — Regular</h3>
+              <p class="muted">Medium size, great taste. Ideal for daily family consumption.</p>
+              <ul class="product-features">
+                <li>Medium size (250g+ each)</li>
+                <li>Excellent sweetness</li>
+                <li>Best value for families</li>
               </ul>
               <div class="card-actions">
-                <a href="#" class="btn btn-primary order-btn">Order via WhatsApp</a>
-                <a href="tel:+91XXXXXXXXXX" class="muted link-phone">Call to order</a>
+                <a href="#" class="btn btn-primary order-btn">Order Grade B</a>
+                <a href="tel:+918799402490" class="link-phone">Call: +91 8799402490</a>
               </div>
             </div>
           </article>
+
+          <!-- Grade C -->
+          <article class="product-card">
+            <img src="images/mango-box-grade-c.png" alt="Grade C Economy Kesar Mangoes" loading="lazy">
+            <div class="card-body">
+              <h3>Grade C — Economy</h3>
+              <p class="muted">Smaller size, same authentic taste. Great for making pulp, shakes & desserts.</p>
+              <ul class="product-features">
+                <li>Smaller size (200g+ each)</li>
+                <li>Same natural sweetness</li>
+                <li>Perfect for recipes</li>
+              </ul>
+              <div class="card-actions">
+                <a href="#" class="btn btn-primary order-btn">Order Grade C</a>
+                <a href="tel:+918799402490" class="link-phone">Call: +91 8799402490</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="box-options">
+          <h4>Available Box Sizes</h4>
+          <div class="box-grid">
+            <div class="box-option">
+              <strong>5 kg Box</strong>
+              <span>Perfect for small families</span>
+            </div>
+            <div class="box-option">
+              <strong>10 kg Box</strong>
+              <span>Best value, ideal for sharing</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- WHY CHOOSE US -->
     <section id="why" class="section container">
-      <h2>Why Choose KP Mango</h2>
+      <h2>Why Choose KP Mango?</h2>
+      <p class="intro">What makes our Gir Kesar mangoes special</p>
+      
       <div class="cards-grid">
         <div class="card">
-          <!-- Inline SVG icon -->
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4CAF50" d="M12 2C8 8 5 11 5 15a7 7 0 0014 0c0-4-3-7-7-13z"/></svg>
-          <h3>Chemical-free</h3>
-          <p>No synthetic pesticides or growth chemicals — pure, healthy fruit.</p>
+          <svg class="icon" viewBox="0 0 24 24"><path fill="#4CAF50" d="M12 2C8 8 5 11 5 15a7 7 0 0014 0c0-4-3-7-7-13z"/></svg>
+          <h3>100% Chemical-Free</h3>
+          <p>No synthetic pesticides, fertilizers, or growth hormones. Pure organic farming.</p>
         </div>
 
         <div class="card">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFB03B" d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7L2 10l7-1z"/></svg>
-          <h3>Naturally Ripened</h3>
-          <p>Fruits ripen on the tree for full aroma and sweetness.</p>
+          <svg class="icon" viewBox="0 0 24 24"><path fill="#E53935" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          <h3>No Carbide Ripening</h3>
+          <p>Mangoes ripen naturally on the tree. No artificial carbide or chemical ripening.</p>
         </div>
 
         <div class="card">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4CAF50" d="M12 2a10 10 0 100 20 10 10 0 000-20zM8 11h8v2H8z"/></svg>
-          <h3>Farm-fresh Quality</h3>
-          <p>Sorted and packed within hours of harvest for freshness.</p>
+          <svg class="icon" viewBox="0 0 24 24"><path fill="#FFB03B" d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7L2 10l7-1z"/></svg>
+          <h3>Naturally Tree-Ripened</h3>
+          <p>Harvested only when fully mature for maximum sweetness and authentic aroma.</p>
         </div>
 
         <div class="card">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4CAF50" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
-          <h3>Nationwide Delivery</h3>
-          <p>Secure shipping and reliable couriers across India.</p>
+          <svg class="icon" viewBox="0 0 24 24"><path fill="#1976D2" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          <h3>GI Tagged Authentic</h3>
+          <p>Certified Geographical Indication tag ensures you get genuine Gir Kesar.</p>
         </div>
 
         <div class="card">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFB03B" d="M12 2l3 7h7l-5 4 2 8-7-4-7 4 2-8-5-4h7z"/></svg>
-          <h3>Premium Grade</h3>
-          <p>Ideal for discerning buyers seeking the best Gir Kesar.</p>
+          <svg class="icon" viewBox="0 0 24 24"><path fill="#4CAF50" d="M20 2H4c-1 0-2 1-2 2v3c0 1 1 2 2 2v11c0 1 1 2 2 2h12c1 0 2-1 2-2V9c1 0 2-1 2-2V4c0-1-1-2-2-2zm-8 12H8v-2h4v2zm6-8H6V4h12v2z"/></svg>
+          <h3>Farm-Fresh Packing</h3>
+          <p>Packed within hours of harvest. Cushioned boxes ensure mangoes arrive perfect.</p>
+        </div>
+
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="#FF9800" d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+          <h3>Pan-India Delivery</h3>
+          <p>Fast shipping to 50+ cities. Track your order from farm to doorstep.</p>
         </div>
       </div>
     </section>
@@ -218,23 +280,108 @@
     <!-- FARMING PRACTICES -->
     <section id="farming" class="section bg-light">
       <div class="container">
-        <h2>Farming Practices</h2>
-        <p class="intro">We follow time-tested, sustainable methods focused on soil health and natural ripening.</p>
+        <h2>Our Farming Practices</h2>
+        <p class="intro">Traditional wisdom meets sustainable agriculture — how we grow the best Kesar mangoes</p>
 
         <div class="farming-grid">
           <div class="practice">
-            <h3>Organic Care</h3>
-            <p>Compost, green-manure, and natural pest control maintain healthy trees and rich soil.</p>
+            <div class="practice-icon">🌱</div>
+            <h3>Organic Manure</h3>
+            <p>We use only natural compost, cow dung manure (from desi cows), and vermicompost. No chemical fertilizers touch our soil.</p>
           </div>
 
           <div class="practice">
-            <h3>Chemical-free</h3>
-            <p>We avoid synthetic pesticides and growth hormones. Fruit is safe for families, including children and elders.</p>
+            <div class="practice-icon">🐄</div>
+            <h3>Desi Cow Integration</h3>
+            <p>Our farm maintains Gir cows whose urine and dung provide natural pest control and soil enrichment — traditional Vedic farming.</p>
           </div>
 
           <div class="practice">
-            <h3>Hand Harvesting & Sorting</h3>
-            <p>Fruit is hand-picked and graded on the farm to ensure consistent quality and ripeness.</p>
+            <div class="practice-icon">🌿</div>
+            <h3>Natural Pest Control</h3>
+            <p>Neem oil, garlic spray, and beneficial insects keep pests away naturally. Zero synthetic pesticides used.</p>
+          </div>
+
+          <div class="practice">
+            <div class="practice-icon">💧</div>
+            <h3>Drip Irrigation</h3>
+            <p>Water-efficient drip irrigation ensures each tree gets optimal hydration without wastage.</p>
+          </div>
+
+          <div class="practice">
+            <div class="practice-icon">✋</div>
+            <h3>Hand Harvesting</h3>
+            <p>Each mango is hand-picked at the right maturity. No machine harvesting that damages fruit.</p>
+          </div>
+
+          <div class="practice">
+            <div class="practice-icon">📦</div>
+            <h3>Same-Day Packing</h3>
+            <p>Mangoes are graded and packed on the same day of harvest for maximum freshness.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HEALTH BENEFITS -->
+    <section id="health" class="section container">
+      <h2>Health Benefits of Kesar Mango</h2>
+      <p class="intro">Gir Kesar is not just delicious — it's packed with nutrients</p>
+
+      <div class="health-grid">
+        <div class="health-card">
+          <h3>🍊 Rich in Vitamin C</h3>
+          <p>Boosts immunity and helps fight infections. One mango provides 60% of daily Vitamin C needs.</p>
+        </div>
+        <div class="health-card">
+          <h3>👁️ Good for Eyes</h3>
+          <p>High in Vitamin A and beta-carotene, essential for healthy vision and eye health.</p>
+        </div>
+        <div class="health-card">
+          <h3>💪 Improves Digestion</h3>
+          <p>Natural enzymes like amylase help break down food and improve gut health.</p>
+        </div>
+        <div class="health-card">
+          <h3>❤️ Heart Healthy</h3>
+          <p>Contains potassium and magnesium that help maintain healthy blood pressure.</p>
+        </div>
+        <div class="health-card">
+          <h3>✨ Glowing Skin</h3>
+          <p>Antioxidants and Vitamin E promote healthy, glowing skin and reduce aging signs.</p>
+        </div>
+        <div class="health-card">
+          <h3>⚡ Natural Energy</h3>
+          <p>Natural sugars provide instant energy without the crash of processed foods.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECIPES -->
+    <section id="recipes" class="section bg-light">
+      <div class="container">
+        <h2>Delicious Mango Recipes</h2>
+        <p class="intro">Make the most of your Gir Kesar mangoes with these popular recipes</p>
+
+        <div class="recipes-grid">
+          <div class="recipe-card">
+            <div class="recipe-icon">🥤</div>
+            <h3>Mango Lassi</h3>
+            <p>Blend ripe Kesar mango with yogurt, sugar, and cardamom for a refreshing summer drink.</p>
+          </div>
+          <div class="recipe-card">
+            <div class="recipe-icon">🍨</div>
+            <h3>Mango Kulfi</h3>
+            <p>Traditional Indian ice cream made with Kesar mango pulp, milk, and saffron.</p>
+          </div>
+          <div class="recipe-card">
+            <div class="recipe-icon">🥧</div>
+            <h3>Aamras</h3>
+            <p>Classic Gujarati dessert — pure mango pulp served with hot puris. A seasonal favorite!</p>
+          </div>
+          <div class="recipe-card">
+            <div class="recipe-icon">🍰</div>
+            <h3>Mango Shrikhand</h3>
+            <p>Creamy hung curd mixed with fresh mango pulp and flavored with cardamom.</p>
           </div>
         </div>
       </div>
@@ -242,77 +389,150 @@
 
     <!-- ORDER PROCESS -->
     <section id="order" class="section container">
-      <h2>Order Process</h2>
-      <p class="intro">Simple 3-step ordering — quick and direct from our farm to your home.</p>
+      <h2>How to Order</h2>
+      <p class="intro">Simple 3-step process — from our farm to your home</p>
 
       <ol class="steps">
         <li>
-          <strong>Choose</strong>
-          <p>Select a 5kg or 10kg box and preferred delivery window.</p>
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <strong>Choose Your Box</strong>
+            <p>Select grade (A/B/C) and box size (5kg or 10kg) based on your preference.</p>
+          </div>
         </li>
         <li>
-          <strong>Order</strong>
-          <p>Message us on WhatsApp or call to confirm your order and delivery details.</p>
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <strong>Place Order</strong>
+            <p>Message us on WhatsApp or call with your order details and delivery address.</p>
+          </div>
         </li>
         <li>
-          <strong>Receive</strong>
-          <p>We pack with care and ship. Receive fresh mangoes at your doorstep across India.</p>
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <strong>Receive Fresh Mangoes</strong>
+            <p>We harvest, pack, and ship within 24 hours. Receive at your doorstep in 2-4 days.</p>
+          </div>
         </li>
       </ol>
 
+      <div class="delivery-info">
+        <h4>We Deliver To</h4>
+        <p class="cities">Mumbai • Delhi • Bangalore • Chennai • Hyderabad • Ahmedabad • Pune • Kolkata • Surat • Jaipur • Lucknow • and 50+ more cities across India</p>
+      </div>
+
       <div class="order-ctas">
-        <a class="btn btn-primary" id="orderNow" href="#" title="Order via WhatsApp">Order Now on WhatsApp</a>
-        <a class="btn btn-outline" href="tel:+91XXXXXXXXXX">Call: +91 XXXXXXXXXX</a>
+        <a class="btn btn-primary btn-lg" id="orderNow" href="#">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.618-1.462A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          Order Now on WhatsApp
+        </a>
+        <a class="btn btn-outline btn-lg" href="tel:+918799402490">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Call: +91 8799402490
+        </a>
       </div>
     </section>
 
     <!-- TESTIMONIALS -->
     <section id="testimonials" class="section bg-contrast">
       <div class="container">
-        <h2>Customer Testimonials</h2>
-        <p class="intro">What our customers say about KP Mango</p>
+        <h2>What Our Customers Say</h2>
+        <p class="intro">Join 1000+ happy families who trust KP Mango</p>
 
         <div class="testimonials-grid">
           <blockquote class="testimonial">
-            <p>"Sweet, fragrant, and arrived perfectly packed. Our family loved the Kesar mangoes — will order again!"</p>
-            <cite>- Meera K., Ahmedabad</cite>
+            <div class="stars">★★★★★</div>
+            <p>"Best Kesar mangoes I've ever tasted! The sweetness and aroma reminded me of my childhood in Gujarat. Will definitely order again next season."</p>
+            <cite>Meera K</cite>
           </blockquote>
 
           <blockquote class="testimonial">
-            <p>"Premium quality and natural taste. The farm's attention to detail shows in every bite."</p>
-            <cite>- Rajesh P., Mumbai</cite>
+            <div class="stars">★★★★★</div>
+            <p>"Ordered Grade A for gifting. Everyone was impressed with the quality. No comparison to supermarket mangoes!"</p>
+            <cite>Rajesh P</cite>
           </blockquote>
 
           <blockquote class="testimonial">
-            <p>"Great service and timely delivery. Excellent for gifting during the mango season."</p>
-            <cite>- Sunita S., Delhi</cite>
+            <div class="stars">★★★★★</div>
+            <p>"Finally found a farm that delivers genuine chemical-free mangoes. My kids love them. The taste is pure and natural."</p>
+            <cite>Sunita S</cite>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>"Prompt delivery and excellent packing. Not a single mango was damaged. The freshness is unmatched."</p>
+            <cite>Amit J</cite>
           </blockquote>
         </div>
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section id="faq" class="section container">
+      <h2>Frequently Asked Questions</h2>
+      
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>When does the mango season start?</summary>
+          <p>Gir Kesar mango season typically runs from <strong>mid-April to mid-July</strong>. Peak harvest is in May-June when mangoes are at their sweetest. We start accepting pre-orders from March.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How are your mangoes different from market mangoes?</summary>
+          <p>Our mangoes are <strong>100% organic, tree-ripened, and chemical-free</strong>. Market mangoes are often artificially ripened using carbide chemicals. We harvest only mature mangoes that ripen naturally, giving authentic taste and aroma.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How should I ripen the mangoes after receiving?</summary>
+          <p>Keep mangoes in the box at room temperature for 2-4 days. They will ripen naturally. <strong>Do not refrigerate</strong> unripe mangoes. Once ripe (soft to touch, fragrant), you can refrigerate for 2-3 days.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What if mangoes arrive damaged?</summary>
+          <p>We pack mangoes with utmost care using cushioned boxes. In the rare case of damage, send us photos within 24 hours of delivery, and we'll replace or refund the damaged mangoes.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do you deliver to my city?</summary>
+          <p>Yes! We deliver to <strong>all major cities across India</strong> including Mumbai, Delhi, Bangalore, Chennai, Hyderabad, Pune, Kolkata, and 50+ more cities. Delivery takes 2-4 days depending on location.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What is the minimum order quantity?</summary>
+          <p>Minimum order is <strong>5 kg box</strong>. We also offer 10 kg boxes which provide better value. For bulk orders (50kg+), contact us for special pricing.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How do I pay for my order?</summary>
+          <p>We accept <strong>UPI, Google Pay, PhonePe, Bank Transfer, and Cash on Delivery</strong> (available in select cities). Payment details are shared after order confirmation.</p>
+        </details>
+      </div>
+    </section>
+
     <!-- CONTACT -->
-    <section id="contact" class="section container">
-      <h2>Contact & Orders</h2>
-      <p class="intro">We accept orders via WhatsApp and phone. Replace the phone number in script.js with your number to enable the WhatsApp link.</p>
+    <section id="contact" class="section bg-light">
+      <div class="container">
+        <h2>Contact & Orders</h2>
+        <p class="intro">Ready to taste authentic Gir Kesar? Get in touch!</p>
 
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>WhatsApp</h3>
-          <p>Fastest way to order — send your box choice and delivery details.</p>
-          <a id="whatsappBtn" class="btn btn-whatsapp" href="#" title="Chat on WhatsApp">Chat on WhatsApp</a>
-        </div>
+        <div class="contact-grid">
+          <div class="contact-card highlight-card">
+            <h3>📱 WhatsApp (Fastest)</h3>
+            <p>Send your order with box size, grade, quantity, and delivery address.</p>
+            <a id="whatsappBtn" class="btn btn-whatsapp btn-lg" href="#">Chat on WhatsApp</a>
+          </div>
 
-        <div class="contact-card">
-          <h3>Phone</h3>
-          <p>Prefer a call? We're available to take orders and answer questions.</p>
-          <a class="btn btn-outline" href="tel:+91XXXXXXXXXX">Call +91 XXXXXXXXXX</a>
-        </div>
+          <div class="contact-card">
+            <h3>📞 Phone</h3>
+            <p>Call us for orders, queries, or bulk inquiries.</p>
+            <a class="btn btn-outline" href="tel:+918799402490">+91 8799402490</a>
+          </div>
 
-        <div class="contact-card">
-          <h3>Location</h3>
-          <p>Jamvala Gir, Gir region — Gujarat, India</p>
-          <a class="link-muted" href="https://www.google.com/maps/search/Jamvala+Gir+Gujarat" target="_blank" rel="noopener">View on map</a>
+          <div class="contact-card">
+            <h3>📍 Farm Location</h3>
+            <p><strong>KP Mango Farm</strong><br>Jamvala Gir, Gir Somnath District<br>Gujarat - 362150, India</p>
+            <a class="link-muted" href="https://maps.app.goo.gl/Hhax5cVjQigBbQkt8" target="_blank" rel="noopener">View on Google Maps →</a>
+          </div>
         </div>
       </div>
     </section>
@@ -320,20 +540,36 @@
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>KP Mango</strong>
-        <p>Jamvala Gir, Gujarat, India</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="KP Mango" width="60" height="60">
+          <p><strong>KP Mango</strong><br>Premium Organic Gir Kesar Mangoes<br>Jamvala Gir, Gujarat</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Our Mangoes</a></li>
+            <li><a href="#farming">Farming</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>📞 +91 8799402490</p>
+          <p>📍 Jamvala Gir, Gujarat</p>
+        </div>
       </div>
-
-      <div class="footer-right">
-        <p class="muted">© <span id="year"></span> KP Mango. All rights reserved.</p>
-        <p class="muted small">Designed for fast loading and GitHub Pages hosting.</p>
+      
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> KP Mango. All rights reserved. | For Those Who Know Real Gir Kesar</p>
       </div>
     </div>
   </footer>
 
-  <!-- Minimal JS: nav toggle, smooth scroll, and WhatsApp link setup -->
   <script src="script.js" defer></script>
 </body>
 </html>
